@@ -1,0 +1,56 @@
+PhishVN — quality checks
+========================
+File: project/data/dataset_url.csv
+File size: 11,263,539 bytes (10.74 MiB)
+Rows: 53,116
+Columns: 29
+
+Label counts:
+  phishing: 36,706
+  benign: 16,410
+
+Tier counts:
+  bronze: 34,119
+  gold: 9,593
+  silver: 9,404
+
+Source counts:
+  chongluadao: 33,823
+  tranco: 5,993
+  tinnhiem_web: 5,879
+  tinnhiemmang: 2,587
+  tranco_vn: 2,512
+  tinnhiem_org: 2,026
+  openphish: 296
+
+Missing values by column:
+  text: 53,116 (100.0%)
+  msg_len: 53,116 (100.0%)
+  gen_model: 53,116 (100.0%)
+  has_url: 53,116 (100.0%)
+  impersonated_org: 51,090 (96.2%)
+  status: 50,529 (95.1%)
+  rank: 44,611 (84.0%)
+  collected_at: 31,455 (59.2%)
+
+Exact duplicate URL occurrences: 0
+Parseable collected_at values: 21,661
+Minimum parsed collected_at: 2020-02-08
+Maximum parsed collected_at: 2026-03-25
+Host-level collision groups after conservative canonicalisation: 2
+Repeated occurrences across those host-level groups: 2
+
+Interpretation notes:
+- Missing values treat blank, NA, N/A, null, none and nan as missing.
+- Date parsing supports ISO formats and day/month/year values in the source.
+- Host-level canonicalisation strips URL user-info before @, fragments and default ports; this can group different URL strings by host.
+- A host-level collision is not proof of a duplicate record. Review context and keep the raw source unchanged.
+- No URL was opened or visited; this script only parses URL strings.
+
+Collision key: https://chauduc.baria-vungtau.gov.vn/
+  line 8756: https://khatl@chauduc.baria-vungtau.gov.vn | label=benign | tier=gold | source=tinnhiem_org
+  line 9970: https://chauduc.baria-vungtau.gov.vn | label=benign | tier=gold | source=tinnhiem_org
+
+Collision key: https://longan.gov.vn/
+  line 10206: https://longan.gov.vn | label=benign | tier=gold | source=tinnhiem_org
+  line 10239: https://tanbinh@longan.gov.vn | label=benign | tier=gold | source=tinnhiem_org

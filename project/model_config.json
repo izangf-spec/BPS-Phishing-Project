@@ -1,0 +1,37 @@
+{
+  "pipeline_version": "entrega2-v3",
+  "configuration": "LR-B",
+  "calibration": "isotonic",
+  "hyperparameters": {
+    "model__C": 10.0
+  },
+  "threshold": 0.22,
+  "threshold_rule": "minimum cost on nested out-of-fold predictions of all development rows (hyperparameters chosen inside each fold's training part)",
+  "costs_illustrative_EUR": {
+    "FP": 30.0,
+    "FN": 100.0,
+    "TP": 5.0,
+    "TN": 0.0
+  },
+  "seed": 42,
+  "inputs": [
+    "url_len",
+    "num_dots",
+    "num_subdomains",
+    "has_at",
+    "tld"
+  ],
+  "primary_validation": {
+    "protocol": "T1 primary: phishing dates, cutoff 2021-12-31",
+    "cutoff": "2021-12-31"
+  },
+  "model_sha256": "ae32a3385a5226fb5d2e3e5819579e0789a6f02162ff6f51f34f158ebb14d757",
+  "url_features_sha256": "a2f69a09910f701f72bb5d58c8de5b96bb0b8f65f772c6860746a4337676fb7c",
+  "psl_version": "2026-11-11_17-18-20_UTC",
+  "psl_commit": "529030148729033bc6c30dbb05753b805a7d2155",
+  "psl_sha256": "c0c17430faf1d0edb352e165dd3e5e6dfe890b1305cf548e20a572e8c46ff399",
+  "demo_expected": {
+    "http://demo-login.example/account": 0.153444,
+    "https://www.example.org/help": 0.48442
+  }
+}

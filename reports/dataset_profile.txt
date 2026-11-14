@@ -1,0 +1,46 @@
+PhishVN — first-pass dataset profile
+===================================
+File: project/data/dataset_url.csv
+File size: 11,263,539 bytes (10.74 MiB)
+Rows: 53,116
+Columns: 29
+Columns: channel, label, source, is_llm, lang, scenario, impersonated_org, collected_at, scraped_at, label_source, split, url, url_norm, domain, tld, url_len, num_dots, num_subdomains, has_ip, has_at, suspicious_tld, status, tier, rank, text, msg_len, gen_model, has_url, id
+
+Label counts:
+  phishing: 36,706
+  benign: 16,410
+
+Tier counts:
+  bronze: 34,119
+  gold: 9,593
+  silver: 9,404
+
+Source counts:
+  chongluadao: 33,823
+  tranco: 5,993
+  tinnhiem_web: 5,879
+  tinnhiemmang: 2,587
+  tranco_vn: 2,512
+  tinnhiem_org: 2,026
+  openphish: 296
+
+Missing values by column (top 20):
+  text: 53,116 (100.0%)
+  msg_len: 53,116 (100.0%)
+  gen_model: 53,116 (100.0%)
+  has_url: 53,116 (100.0%)
+  impersonated_org: 51,090 (96.2%)
+  status: 50,529 (95.1%)
+  rank: 44,611 (84.0%)
+  collected_at: 31,455 (59.2%)
+
+Exact duplicate count in selected URL column (url): 0
+Valid collected_at dates: 21,661
+Min collected_at: 2020-02-08T00:00:00
+Max collected_at: 2026-03-25T00:00:00
+
+Notes:
+- Missing values treat blank, NA, N/A, null, none and nan as missing.
+- Duplicate count is exact-string duplicates only, not URL-normalised duplicates.
+- Date min/max use parseable collected_at values only.
+- Review this report before making claims; inspect schema/docs and verify column semantics.

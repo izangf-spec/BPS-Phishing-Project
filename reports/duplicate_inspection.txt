@@ -1,0 +1,19 @@
+PhishVN — host-level URL collision inspection
+=============================================
+
+This is a review list, not a deduplication instruction.
+The canonical key strips URL user-info before @, fragments and default ports.
+URLs were not opened or visited.
+
+Collision key: https://chauduc.baria-vungtau.gov.vn/
+  CSV line 8756: https://khatl@chauduc.baria-vungtau.gov.vn | label=benign | tier=gold | source=tinnhiem_org | id=f1cdb128-9780-5a4a-ac32-b0875d37c6b1
+  CSV line 9970: https://chauduc.baria-vungtau.gov.vn | label=benign | tier=gold | source=tinnhiem_org | id=98f601ef-2ca9-5a5e-a7fb-72f7322b9979
+
+Collision key: https://longan.gov.vn/
+  CSV line 10206: https://longan.gov.vn | label=benign | tier=gold | source=tinnhiem_org | id=3b668761-de0d-53b1-84fa-48531129c9c1
+  CSV line 10239: https://tanbinh@longan.gov.vn | label=benign | tier=gold | source=tinnhiem_org | id=52c55a7d-809e-5922-a9fd-c4099079d5e1
+
+Collision groups: 2
+Repeated occurrences beyond first row per group: 2
+
+Decision: retain all source rows unless a later documented analysis step establishes a justified deduplication rule.

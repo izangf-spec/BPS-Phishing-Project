@@ -1,0 +1,39 @@
+PROJECT VALIDATION
+==================
+PASS | File exists: README.md | README.md
+PASS | File exists: DATASET_SOURCE.txt | DATASET_SOURCE.txt
+PASS | File exists: .gitignore | .gitignore
+PASS | File exists: project/data/dataset_url.csv | project/data/dataset_url.csv
+PASS | File exists: project/data/splits/url_train.csv | project/data/splits/url_train.csv
+PASS | File exists: project/data/splits/url_val.csv | project/data/splits/url_val.csv
+PASS | File exists: project/data/splits/url_test.csv | project/data/splits/url_test.csv
+PASS | File exists: data_docs/docs/schema.md | data_docs/docs/schema.md
+PASS | File exists: data_docs/docs/datasheet.md | data_docs/docs/datasheet.md
+PASS | File exists: data_docs/docs/data_sources.md | data_docs/docs/data_sources.md
+PASS | File exists: data_docs/LICENSE | data_docs/LICENSE
+PASS | File exists: data_docs/CITATION.cff | data_docs/CITATION.cff
+PASS | File exists: project/project-brief.md | project/project-brief.md
+PASS | File exists: scripts/profile_dataset.py | scripts/profile_dataset.py
+PASS | File exists: scripts/quality_checks.py | scripts/quality_checks.py
+PASS | File exists: scripts/inspect_duplicates.py | scripts/inspect_duplicates.py
+PASS | File exists: reports/dataset_profile.txt | reports/dataset_profile.txt
+PASS | File exists: reports/quality_checks.txt | reports/quality_checks.txt
+PASS | File exists: reports/duplicate_inspection.txt | reports/duplicate_inspection.txt
+PASS | File exists: data_docs/PROJECT_DATA_NOTES.md | data_docs/PROJECT_DATA_NOTES.md
+PASS | File exists: data_docs/docs/tranco_join_plan.md | data_docs/docs/tranco_join_plan.md
+PASS | Main dataset rows | 53,116 rows
+PASS | Main dataset columns | 29 columns
+PASS | Dataset size | 11,263,539 bytes
+PASS | Brief includes dataset card | dataset card heading/table
+PASS | Brief includes architecture diagram | Mermaid flowchart present
+PASS | Brief includes hypotheses | 3 hypotheses found
+PASS | Brief includes KPIs | KPI section present
+PASS | Brief includes Harvard references | References section present
+PASS | Second source and join method identified | Tranco domain join is explicitly planned, not falsely claimed as complete
+PASS | KPI formulas and trade-offs | Classifier formulas and operational trade-off present
+PASS | AI assistance disclosed | Disclosure present in brief and README
+PASS | Hypotheses prioritised | Priorities stated
+PASS | Architecture alternatives and risks | Alternative and main risks described
+PASS | Brief prose word count | 1492 words excluding dataset card, diagram code and references
+
+Result: 35/35 checks passed

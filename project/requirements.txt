@@ -1,0 +1,15 @@
+# Pipeline and notebook dependencies (Python 3.13). Versions of the verified run environment.
+scikit-learn==1.9.1
+pandas==3.0.5
+numpy==2.5.3
+joblib==1.6.0
+plotly==7.1.0
+# Static PNG charts in figures/ (matplotlib, Agg backend, no browser needed; Kaleido was rejected because it needs Chrome)
+matplotlib==3.11.2
+publicsuffixlist==1.1.2.20261112
+# Needed only to run the notebook from the command line (not to load model.joblib)
+nbformat==5.11.1
+nbclient==0.11.0
+nbconvert==7.17.2
+ipykernel==7.4.0
+scipy==1.18.1
